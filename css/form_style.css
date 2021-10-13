@@ -1,0 +1,110 @@
+
+:root{
+    --shadow: 10px 10px 10px #000000;
+    --border_design: solid 1px #ff9d00;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    max-width: 350px;
+    border: var(--border_design);
+    background-color: #fffcf2ff;
+    padding: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(var(--shadow));
+    font-size: 0.85em;
+    /* margin:auto; */
+}
+
+fieldset{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: var(--border_design);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: center;
+    padding:15px;
+}
+
+fieldset div{
+    width: 48%;
+    text-align: left;
+}
+
+input{
+    border: var(--border_design);
+    background-color: rgb(247, 247, 243);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+    border-radius: 6px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus{
+    background-color: #fdfdd6;
+    outline: 0;
+    box-shadow: 0 0 3px 2px  #df9b2f;
+    border:solid 1px #d3df2f;
+}
+
+input[type=submit]{
+    color: white;
+    background: linear-gradient(to top, #ff9d00, #df9b2f, white);
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus{
+    filter:brightness(1.1);
+}
+
+input[type=submit]:active{
+    transform:scale(.99);
+    border-top: solid 2px #ff9d00;
+    outline: 0;
+}
+
+label,
+legend{
+    font-weight:bold;
+}
+
+fieldset label{
+    vertical-align:middle;
+    /* display: inline-block; */
+    /* display:block; */
+    /* padding:5px;
+	margin:20px 0px;
+	border:solid 1px black;
+	background-color:#ccc;	 */
+    font-weight: normal;
+    /* margin:5px; */
+}
+
+fieldset input{
+    vertical-align:middle;
+    width:auto;
+    margin: 0px;
+}
+
+textarea{
+    border: var(--border_design);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    min-height:100px;
+    border-radius: 6px;
+    background-color: rgb(247, 247, 243);
+}
+
+#contact_header{
+    text-align: center;
+    background-color:  #df9b2f;
+    font-size: 0.8em;
+    line-height: 30px;
+    color: white;
+    max-width: 350px;
+    border-radius: 6px;
+}

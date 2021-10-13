@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">	
+	<head>
+		<title>Rock Stars</title>
+		<meta charset="utf-8" />
+		<!-- Mobile viewport meta tag 
+			  this will deal with displays
+			  that can make a physically small device 
+			  appear much larger to a media query
+			  
+			  ensure this tag is applied BEFORE your media queries
+		-->	
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+        <link rel="stylesheet" href="../css/style.css" media="all" />
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+        <link rel="manifest" href="../site.webmanifest">
+        <link rel="mask-icon" href="../icon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.2/dist/gsap.min.js"></script>
+    </head>	
+    
+	<body>	
+	
+	<div id="wrapper">
+
+		<header>
+			<div id="top_bar">
+                <img class="spinning" id="logo_main" src="../images/logo_200.png" alt="logo main" />
+                <div id="small_logos">
+					<div>
+                    	<a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="../images/facebook_logo.png" alt="logo facebook" /></a>
+					</div>
+					<div>
+						<a href="https://twitter.com/" target="_blank"><img id="twitter" src="../images/twitter-logo.png" alt="logo twitter" /></a>
+					</div>
+					<div class="btn_menu">
+                        <img src="../images/menu.png" alt="menu" />
+                    </div>
+				</div> 
+				<div id="welcome">   
+					<h1>Welcome to the</h1>
+					<h1>Rock Stars Curling Club!</h1>
+				</div>
+            </div>
+		</header>
+		
+		<nav>
+			<div class="topnav" id="myTopnav">
+                <a href="../index.html"><img src="../images/home.png" alt="home" /></a>
+				<div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a href="about_us.html">About Us</a>
+						<a href="news_and_events.html">News & Events</a>
+					  	<a href="rules_of_curling.html">Rules of Curling</a>
+					  	<a href="new_to_curling.html">New to Curling?</a>
+					</div>
+				</div>
+				<a href="leagues.html">Leagues</a>
+				<a href="practice_ice.html">Practice Ice</a>
+				<div class="dropdown">
+					<button class="dropbtn">Rental & Courses</button>
+					<div class="dropdown-content">
+						<a href="rental.html">Rental</a>
+						<a href="courses.html">Courses</a>
+					</div>
+				</div>
+				<a href="contact.html">Contact</a>
+			</div>
+		</nav>
+		
+		<main>
+			<section>
+				<article>
+					<h2>How do you play curling and what are the rules?</h2>
+					<p>
+						A key driver of curling’s appeal is its relative simplicity. Though the sport may have unfamiliar 
+						terms, and thus seem complicated, it’s actually pretty easy to follow.
+					</p>
+					
+					<p>
+						A curling match <em>consist</em> of 10 <strong>ends</strong>, which are equivalent to innings in baseball. In each end, 
+						the four players on both teams alternate throwing stones. The <strong>lead</strong> throws first, followed by 
+						the <strong>second</strong>, then the <strong>third</strong> — or <strong>vice-skip</strong> — then finally, the <strong>skip</strong>. Each of the four players on the 
+						competing teams throws two stones per end, for a total of 16 stones. The “skip” is the most important 
+						player on the team. The skip not only throws the last stone in an end — which often determines 
+						the scoring — but also directs the overall strategy.
+					</p>
+					
+					<p>
+						To execute a shot, a curler pushes a foot off the <strong>hack</strong>, a piece of rubber akin to a starting block. 
+						The curler slides across the ice, or <strong>sheet</strong>, to the <strong>hog</strong> line, and must release the stone before it 
+						touches the <strong>line</strong>. The stone then heads for the <strong>house</strong> — the area with four concentric circles on 
+						the other side of the sheet that loosely resembles a dartboard. The house is the scoring area.
+					</p>
+
+					<figure id="rink_img">
+						<img src="../images/rink-size.png" alt="curling rink" />
+					</figure>
+				</article>
+
+				<article>
+					<h2>How does curling scoring work?</h2>
+					<p>
+						Only one team can score during a curling end. The team with the most stones closest to the curling bullseye — the button — is awarded points. 
+						So if, after 16 stones are thrown, Team A has a stone right on the <strong>button</strong>, and Team B has a stone a few feet off the button, Team A scores a point. 
+						If Team A had one stone on the button and a stone a few feet off the button, while Team B had a stone on the outer edge of the house, Team A scores two points. 
+					</p>
+					
+					<p>
+						The team that fails to score in an end gets the <strong>hammer</strong>, or the advantage of throwing the last stone, in the next end. If no stones remain in the house 
+						after an end, no points are awarded: the team with the hammer in a scoreless, or blank, end retains the hammer in the subsequent end. 
+						The team with the most points after 10 ends wins the match.
+					</p>
+				</article>
+
+				<article>
+					<h2>What’s with the curling brooms?</h2>
+					<p>
+						After a curler throws a stone, his or her teammates will often start sweeping the ice in front the stone as it glides down the ice. Why is sweeping 
+						the activity that requires the most exertion in this particular Olympic sport? Physics! The sweeping warms the ice and reduces friction, allowing 
+						the stone to travel farther and straighter. Depending on the path of the stone and its intended target, a team’s skip will instruct the other curlers to 
+						either start sweeping like a teen whose parents are returning home early to an illicit house party, or to lift their brooms.
+					</p>
+				</article>
+
+				<p class="inline_link">
+					More information:&nbsp;<a href="https://www.curling.ca/about-curling/getting-started-in-curling/rules-of-curling-for-general-play/" target="_blank">curling.ca</a>
+				</p>
+				
+				<p class="inline_link">
+					(Source:&nbsp;<a href="https://time.com/5092825/curling-sport-terms-rules-history/" target="_blank">time.com</a>)
+				</p>
+			</section>	
+		</main>
+		
+		<footer>
+			<div id="footer_flex">
+				<div id="sitemap">&copy; 2021 Rock Stars Curling Club. &nbsp; <a href="sitemap.html">Sitemap</a></div>
+				<div id="design">&nbsp; Web Design Gabor Siffer</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../scripts/menu.js"></script>
+	</body>	
+</html>
